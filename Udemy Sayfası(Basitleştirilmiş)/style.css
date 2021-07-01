@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(13, 0, 73);
+}
+
+li {
+  list-style-type: none;
+}
+
+/*NAVBAR*/
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right li {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+/*CONTENT*/
+.content {
+  display: flex;
+}
+
+/*ASİDE*/
+.content aside {
+  flex: 26%;
+  height:500px;
+}
+
+.aside-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-header div:hover {
+  cursor: pointer;
+}
+
+/*SECTİON*/
+.content section {
+  flex: 74%;
+  position: relative;
+}
+
+.content section i{
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*ASİDE-İTEM*/
+.aside-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;/*Yazı ve alt oku aynı hizaya alır*/
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside-item div:hover{
+  cursor: pointer;
+}
+
+.aside-item footer{
+  text-align: left;
+}
